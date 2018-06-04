@@ -6,7 +6,7 @@ pub struct Translation {
     from: String,
     to: String,
     from_language: Language,
-    translated_words: Vec<TranslatedWords>,
+    pub translated_words: Vec<TranslatedWords>,
 }
 
 #[derive(Debug, PartialEq, Serialize, Deserialize)]
